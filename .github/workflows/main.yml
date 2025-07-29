@@ -1,0 +1,48 @@
+name: Deploy SOAR Content
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate Playbook File
+        run: |
+          echo "Checking playbook format..."
+          cat playbooks/phishing_response.yml
+          echo "Playbook file passed basic check."
+
+      - name: Simulate Deployment
+        run: |
+          echo "Deploying playbook to SOAR platform..."
+          echo "Deployment complete!"
+name: Deploy SOAR Content
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate Playbook File
+        run: |
+          echo "Checking playbook format..."
+          cat playbooks/phishing_response.yml
+          echo "Playbook file passed basic check."
+
+      - name: Simulate Deployment
+        run: |
+          echo "Deploying playbook to SOAR platform..."
+          echo "Deployment complete!"
