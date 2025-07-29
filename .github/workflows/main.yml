@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "Deploying playbook to SOAR platform..."
           echo "Deployment complete!"
-name: Deploy SOAR Content
+
 
 on:
   push:
